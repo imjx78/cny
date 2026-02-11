@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#c41e3a">
+  <title>🧧 Exact CNY Celebration 🎊</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Welcome Page -->
+    <div id="welcome-page" class="page active">
+      <div class="cny-decoration">🧧 🏮 🐉 🏮 🧧</div>
+      <h1>🎊 Welcome to Exact CNY celebration 🎊</h1>
+      <input type="text" id="welcome-input" class="input-field" placeholder="Enter your name *" required>
+      <button id="start-btn" class="btn btn-primary">✨ Start ✨</button>
+    </div>
+
+    <!-- Question Pages -->
+    <div id="question-page" class="page">
+      <div class="cny-decoration-small">🏮 🧧 🏮</div>
+      <div class="question-header">
+        <h2>Question <span id="question-index">1</span></h2>
+      </div>
+      <div class="question-content">
+        <input type="text" id="answer-input" class="input-field" placeholder="Enter your answer">
+      </div>
+      <div class="button-group">
+        <button id="back-btn" class="btn btn-secondary">⬅️ Back</button>
+        <button id="next-btn" class="btn btn-primary">Next ➡️</button>
+        <button id="finish-btn" class="btn btn-success">🎊 Finish 🎊</button>
+      </div>
+    </div>
+
+    <!-- Completion Page -->
+    <div id="completion-page" class="page">
+      <div class="cny-decoration">🎆 🧧 🏮 🐉 🏮 🧧 🎆</div>
+      <h1>🎉 Thank You! 🎉</h1>
+      <p>Your answers have been submitted successfully.</p>
+      <div id="result-message"></div>
+      <div class="cny-decoration-small" style="margin-top: 20px;">恭喜發財 🧧</div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
